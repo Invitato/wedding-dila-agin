@@ -13,7 +13,7 @@ import './assets/custom-styles.css';
 
 const URL = 'https://invitato.com';
 const TITLE = `The Wedding of ${THE_BRIDE}`;
-const IMAGE_URL = `https://user-images.githubusercontent.com/10141928/99896614-c7122780-2cc4-11eb-8a3b-89c90d381ed5.jpg`;
+const IMAGE_URL = `https://user-images.githubusercontent.com/10141928/100097262-0be9ba00-2e8f-11eb-97d4-7da7ab7a0d50.jpg`;
 const META_DESCRIPTION = `Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan keberkahan. - ${THE_BRIDE}`;
 
 function MainLayout({ children }) {
