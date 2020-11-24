@@ -1,0 +1,83 @@
+:root {
+  /* UI colors */
+  --font-white-ui: #ecf0f1;
+  --font-black-ui: #222831;
+  --font-blue-ui: #3282b8;
+  --font-primary: #a18f72;
+  --font-primary-2: #9c8d73;
+  --secondary-bg: #f8f5ee;
+  --primary-bg: #ecf0f1;
+
+  /* font type variables */
+  --font-family-title: 'La Belle Aurore', cursive;
+  --font-family-content: 'PT Serif', serif;
+}
+
+body {
+  font-family: var(--font-family-content);
+  color: var(--font-primary) !important;
+}
+
+.pr-co {
+  color: var(--font-primary) !important;
+}
+
+.pr-co2 {
+  color: var(--font-primary-2) !important;
+}
+
+.gray-bg {
+  background: var(--secondary-bg);
+  background-color: var(--secondary-bg);
+}
+
+.main-font {
+  font-family: var(--font-family-title);
+  color: var(--font-primary);
+}
+
+.content-font {
+  font-family: var(--font-family-content) !important;
+  color: var(--font-black-ui) !important;
+}
+
+.info {
+  font-family: var(--font-family-content) !important;
+  color: var(--font-black-ui) !important;
+}
+
+.link {
+  color: var(--font-blue-ui) !important;
+  font-weight: 600 !important;
+}
+
+.white-font {
+  color: var(--font-white-ui) !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 2.5em !important;
+  }
+
+  .sub-title {
+    margin: 0 0 8px 0 !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sub-title {
+    margin: 0 0 8px 0 !important;
+  }
+}
+
+a {
+  font-weight: bold;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
