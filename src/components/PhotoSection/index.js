@@ -7,7 +7,7 @@ import { THE_BRIDE, CUSTOM_ANIMATION } from '@/constants';
 
 function PhotoSection() {
   return (
-    <div id="fh5co-testimonial" className="fh5co-section-gray">
+    <div id="fh5co-testimonial" style={{ backgroundColor: '#f9f3f5' }}>
       <div className="container">
         <div className="row">
           <LazyLoad height={200}>

@@ -8,7 +8,7 @@ export const styWrapper = css`
   width: 100%;
   min-height: 70vh;
   color: #fff !important;
-  filter: grayscale(1);
+  // filter: grayscale(1);
 
   .bismillah {
     color: #fff !important;

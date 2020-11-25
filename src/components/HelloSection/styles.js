@@ -1,6 +1,13 @@
 import { css } from '@emotion/core';
+import Background from '../QuranSection/assets/bg.jpg';
 
 export const styWrapper = css`
+  background-image: url(${Background});
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 70vh;
+
   .sub-title {
     color: #828282;
     font-weight: 600;

@@ -7,7 +7,7 @@ import { styWrapper } from './styles';
 import { CUSTOM_ANIMATION, LAZY_LOAD } from '@/constants';
 
 const TIME = 'Sabtu, 28 November 2020';
-const LOCATION = `PO Hotel Semarang, Semarang`;
+const LOCATION = `PO Hotel, Semarang`;
 
 function WeddingSection({ isInvitation }) {
   return (

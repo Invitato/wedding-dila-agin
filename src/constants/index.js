@@ -22,7 +22,7 @@ export const SOUND_URL = 'https://www.youtube.com/watch?v=llcQu-XB6oE&feature=yo
  * constants for custom animation
  */
 const FALLBACK_EASING = easings || {};
-export const CUSTOM_ANIMATION = `pop-in 2s ${FALLBACK_EASING.easeOutBack} forwards`;
+export const CUSTOM_ANIMATION = `pop-in 1.5s ${FALLBACK_EASING.easeOutBack} forwards`;
 export const LAZY_LOAD = {
   height: 200,
   offset: -150,

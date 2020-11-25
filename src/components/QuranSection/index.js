@@ -3,12 +3,13 @@ import { bool } from 'prop-types';
 import LazyLoad from 'react-lazyload';
 
 import { THE_BRIDE, CUSTOM_ANIMATION } from '@/constants';
-import { styWrapper } from './styles';
+import IMG_DIVIDER from './assets/divider.png';
+import { styWrapper, styDivider } from './styles';
 
 function HelloSection({ isInvitation }) {
   return (
     <Fragment>
-      <div id="id-hello-section" css={styWrapper} className="gray-bg">
+      <div id="id-hello-section" css={styWrapper}>
         <div className="container" style={{ minHeight: '60vh' }}>
           <LazyLoad height={200} offset={-200}>
             <div className="row" style={{ paddingTop: '2em' }}>
@@ -33,6 +34,12 @@ function HelloSection({ isInvitation }) {
           </LazyLoad>
         </div>
       </div>
+
+      <LazyLoad height={200} offset={-100}>
+        <div css={styDivider} style={{ animation: CUSTOM_ANIMATION }}>
+          <img src={IMG_DIVIDER} alt="divider" />
+        </div>
+      </LazyLoad>
     </Fragment>
   );
 }
