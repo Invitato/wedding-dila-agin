@@ -22,14 +22,20 @@ function WeddingSection({ isInvitation }) {
             </div>
           </div>
         </LazyLoad>
-        <LazyLoad {...LAZY_LOAD}>
-          <div className="row">
-            <div className="col-md-10 col-md-offset-1" style={{ animation: CUSTOM_ANIMATION }}>
-              <WeddingInfoBox title="Akad Nikah" time="08:00 WIB" date={TIME} description={LOCATION} />
-              <WeddingInfoBox title="Resepsi Pernikahan" time="11.00 - 14.00" date={TIME} description={LOCATION} />
-            </div>
+        <div className="row">
+          <div className="col-md-10 col-md-offset-1">
+            <LazyLoad {...LAZY_LOAD} offset={0}>
+              <div style={{ animation: CUSTOM_ANIMATION }}>
+                <WeddingInfoBox title="Akad Nikah" time="08:00 WIB" date={TIME} description={LOCATION} />
+              </div>
+            </LazyLoad>
+            <LazyLoad {...LAZY_LOAD} offset={-200}>
+              <div style={{ animation: CUSTOM_ANIMATION }}>
+                <WeddingInfoBox title="Resepsi Pernikahan" time="11.00 - 14.00" date={TIME} description={LOCATION} />
+              </div>
+            </LazyLoad>
           </div>
-        </LazyLoad>
+        </div>
       </div>
     </div>
   );

@@ -2,17 +2,18 @@ import React, { Fragment } from 'react';
 import { bool } from 'prop-types';
 import LazyLoad from 'react-lazyload';
 import { animations } from 'react-animation';
-import { styWrapper } from '../HelloSection/styles';
+// import { styWrapper } from '../HelloSection/styles';
 
 import { THE_BRIDE, SOUND_BY, SOUND_URL, CUSTOM_ANIMATION, LAZY_LOAD } from '@/constants';
 import CountContainer from '../WelcomeSection/CountContainer';
+import { styWrapper } from './styles';
 
 const ANIMATION = animations || {};
 
 function FooterSection({ isInvitation }) {
   return (
-    <Fragment>
-      <div id="live-wedding-section" css={styWrapper}>
+    <div css={styWrapper}>
+      <div id="live-wedding-section">
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -42,7 +43,7 @@ function FooterSection({ isInvitation }) {
         </div>
       </div>
 
-      <div id="fh5co-couple" className="fh5co-section-gray" css={styWrapper}>
+      <div id="fh5co-couple">
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -86,7 +87,7 @@ function FooterSection({ isInvitation }) {
           </div>
         </div>
       </footer>
-    </Fragment>
+    </div>
   );
 }
 
