@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { object, string, bool, func } from 'prop-types';
 import { animateScroll } from 'react-scroll';
 import { animations } from 'react-animation';
+import LazyLoad from 'react-lazyload';
 
 import WeddingImg from '@assets/images/wedding-logo.png';
 import ScrollToDown from './ScrollToDown';
@@ -58,13 +59,15 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
         <div className="overlay"></div>
         <div className="container">
           <div className="row" css={styWrapper}>
-            <div className="col-md-8 col-md-offset-2 text-center" style={{ animation: ANIMATION.bounceIn }}>
-              <img src={WeddingImg} alt="wedding-dinda-indra" />
-              <h1 className="title">The Wedding of</h1>
-              <div style={{ marginTop: '1em' }}>
-                <h2 className="to-dearest-name">{THE_BRIDE}</h2>
+            <LazyLoad height={200}>
+              <div className="col-md-8 col-md-offset-2 text-center" style={{ animation: ANIMATION.bounceIn }}>
+                <img src={WeddingImg} alt="wedding-dinda-indra" />
+                <h1 className="title">The Wedding of</h1>
+                <div style={{ marginTop: '1em' }}>
+                  <h2 className="to-dearest-name">{THE_BRIDE}</h2>
+                </div>
               </div>
-            </div>
+            </LazyLoad>
           </div>
           <div className="row" style={{ animation: ANIMATION.fadeIn }}>
             <ScrollToDown loading={loading} onClick={handleShowDetail} />
