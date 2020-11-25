@@ -16,7 +16,7 @@ function PhotoSection() {
           </div>
           <div className="row">
             <div className="col-md-10 col-md-offset-1">
-              <ImageGallery items={photos} showBullets={false} />;
+              <ImageGallery autoPlay infinite lazyLoad items={photos} showBullets={false} />;
             </div>
           </div>
         </div>
