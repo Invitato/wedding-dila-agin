@@ -7,6 +7,8 @@ import { styWrapper } from '../HelloSection/styles';
 import { THE_BRIDE, SOUND_BY, SOUND_URL, CUSTOM_ANIMATION, LAZY_LOAD } from '@/constants';
 import CountContainer from '../WelcomeSection/CountContainer';
 
+const ANIMATION = animations || {};
+
 function FooterSection({ isInvitation }) {
   return (
     <Fragment>
@@ -45,7 +47,7 @@ function FooterSection({ isInvitation }) {
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
               <LazyLoad {...LAZY_LOAD}>
-                <p className="info" style={{ animation: animations.fadeInUp }}>
+                <p className="info" style={{ animation: ANIMATION.fadeInUp }}>
                   Sehubungan dengan kondisi saat ini mengenai pembatasan jumlah tamu undangan, <br />
                   Tanpa mengurangi rasa hormat, kami mohon segala doa dan restu dari bapak/ ibu/saudara/i, dan kami
                   berharap tetap dapat menjalin tali silahturahmi melalui media online.
@@ -63,7 +65,7 @@ function FooterSection({ isInvitation }) {
         <div className="container">
           <div className="row copyright">
             <LazyLoad {...LAZY_LOAD}>
-              <div className="col-md-12 text-center" style={{ animation: animations.fadeInUp }}>
+              <div className="col-md-12 text-center" style={{ animation: ANIMATION.fadeInUp }}>
                 <p>
                   <small className="block">&copy; 2020 {THE_BRIDE}. All Rights Reserved.</small>
                   <small className="block">

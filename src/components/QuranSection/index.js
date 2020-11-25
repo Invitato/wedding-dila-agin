@@ -1,12 +1,9 @@
 import React, { Fragment } from 'react';
 import { bool } from 'prop-types';
 import LazyLoad from 'react-lazyload';
-import { easings } from 'react-animation';
 
-import { THE_BRIDE } from '@/constants';
+import { THE_BRIDE, CUSTOM_ANIMATION } from '@/constants';
 import { styWrapper } from './styles';
-
-const CUSTOM_ANIMATION = `pop-in 500ms ${easings.easeOutBack} forwards`;
 
 function HelloSection({ isInvitation }) {
   return (

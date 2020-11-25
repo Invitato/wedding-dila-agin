@@ -6,13 +6,15 @@ import { animations } from 'react-animation';
 import { LAZY_LOAD, CUSTOM_ANIMATION } from '@/constants';
 import { styWrapper } from './styles';
 
+const ANIMATION = animations || {};
+
 function HelloSection({ isInvitation }) {
   return (
     <Fragment>
       <div id="fh5co-couple" css={styWrapper} className="fh5co-section-gray">
         <div className="container">
           <LazyLoad {...LAZY_LOAD}>
-            <div className="row" style={{ animation: animations.fadeInUp }}>
+            <div className="row" style={{ animation: ANIMATION.fadeInUp }}>
               <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
                 <h3 className="sub-title hs">BISMILLAHIRAHMANIRRAHIIM</h3>
                 <h3 className="sub-title hs">Assalamualaikum Warahmatuallahi Wabarakatuh</h3>

@@ -9,6 +9,7 @@ import { styWrapper, styHero, styBackground } from './styles';
 import { THE_BRIDE } from '@/constants';
 
 const DELAY_TIME = 1500;
+const ANIMATION = animations || {};
 
 function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, codeLink, onClickDetail }) {
   const [loading, setLoading] = useState(false);
@@ -57,7 +58,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
         <div className="overlay"></div>
         <div className="container">
           <div className="row" css={styWrapper}>
-            <div className="col-md-8 col-md-offset-2 text-center" style={{ animation: animations.bounceIn }}>
+            <div className="col-md-8 col-md-offset-2 text-center" style={{ animation: ANIMATION.bounceIn }}>
               <img src={WeddingImg} alt="wedding-dinda-indra" />
               <h1 className="title">The Wedding of</h1>
               <div style={{ marginTop: '1em' }}>
@@ -65,7 +66,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
               </div>
             </div>
           </div>
-          <div className="row" style={{ animation: animations.fadeIn }}>
+          <div className="row" style={{ animation: ANIMATION.fadeIn }}>
             <ScrollToDown loading={loading} onClick={handleShowDetail} />
           </div>
         </div>
