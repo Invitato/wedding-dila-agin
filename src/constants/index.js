@@ -1,3 +1,5 @@
+import { easings } from 'react-animation';
+
 /**
  * Link
  */
@@ -14,3 +16,13 @@ export const UTC_WEDDING_TIME = '2020-10-03:04:00:00Z';
 export const THE_BRIDE = 'Dila & Agin';
 export const SOUND_BY = `Elvis Presley - Can't Help Falling In Love With You (Saxophone Cover by Alexandra)`;
 export const SOUND_URL = 'https://www.youtube.com/watch?v=llcQu-XB6oE&feature=youtu.be&ab_channel=AlexandraIlieva';
+
+/**
+ * @string
+ * constants for custom animation
+ */
+export const CUSTOM_ANIMATION = `pop-in 500ms ${easings.easeOutBack} forwards`;
+export const LAZY_LOAD = {
+  height: 200,
+  offset: -150,
+};
