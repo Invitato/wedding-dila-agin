@@ -17,7 +17,10 @@ function WeddingSection({ isInvitation }) {
         <LazyLoad {...LAZY_LOAD}>
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading" style={{ animation: CUSTOM_ANIMATION }}>
-              <h2 className="main-font main-font__wedding">Akad Nikah dan Resepsi Pernikahan</h2>
+              <h2 className="main-font main-font__wedding">
+                Akad Nikah dan <br />
+                Resepsi Pernikahan
+              </h2>
               <span className="sub-title sub-title__wedding">Insha Allah akan diselenggarakan pada:</span>
             </div>
           </div>
