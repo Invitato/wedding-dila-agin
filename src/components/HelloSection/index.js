@@ -20,7 +20,7 @@ function HelloSection({ isInvitation }) {
             <div className="row" style={{ animation: ANIMATION.fadeInUp }}>
               <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
                 <h3 className="sub-title hs">BISMILLAHIRAHMANIRRAHIIM</h3>
-                <h3 className="sub-title hs">Assalamualaikum Warahmatuallahi Wabarakatuh</h3>
+                <h3 className="sub-title hs">Assalamualaikum Wr. Wb</h3>
                 <p className="info">
                   Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk
                   rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran
