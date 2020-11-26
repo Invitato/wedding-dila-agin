@@ -7,6 +7,9 @@ export const styWrapper = css`
   background-position: center;
   width: 100%;
   min-height: 70vh;
+  background-position-y: 65px;
+  background-repeat-y: no-repeat;
+  background-color: #fff;
 
   .sub-title {
     color: #828282;
