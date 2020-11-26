@@ -10,7 +10,7 @@ function HelloSection({ isInvitation }) {
   return (
     <Fragment>
       <div id="id-hello-section" css={styWrapper}>
-        <div className="container" style={{ minHeight: '60vh' }}>
+        <div className="container">
           <LazyLoad height={200} offset={-200}>
             <div className="row" style={{ paddingTop: '2em' }}>
               <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">

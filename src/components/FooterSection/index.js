@@ -25,16 +25,18 @@ function FooterSection({ isInvitation }) {
                 <div style={{ animation: CUSTOM_ANIMATION }}>
                   <CountContainer />
                 </div>
-                <iframe
-                  title="Live Wedding"
-                  width="100%"
-                  height="400"
-                  src="https://www.youtube.com/embed/XMk-W_Jg2Pc"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-                <p className="info">Live: 08:00 WIB | Sabtu, 28 November 2020</p>
+                <div style={{ animation: CUSTOM_ANIMATION }}>
+                  <iframe
+                    title="Live Wedding"
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/XMk-W_Jg2Pc"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  <p className="info">Live: 08:00 WIB | Sabtu, 28 November 2020</p>
+                </div>
               </LazyLoad>
             </div>
           </div>

@@ -6,6 +6,9 @@ import { animations } from 'react-animation';
 import { LAZY_LOAD, CUSTOM_ANIMATION } from '@/constants';
 import { styWrapper } from './styles';
 
+import IMG_BRIDE from './w-bride-3.jpg';
+import IMG_GROOM from './w-groom.jpg';
+
 const ANIMATION = animations || {};
 
 function HelloSection({ isInvitation }) {
@@ -19,11 +22,9 @@ function HelloSection({ isInvitation }) {
                 <h3 className="sub-title hs">BISMILLAHIRAHMANIRRAHIIM</h3>
                 <h3 className="sub-title hs">Assalamualaikum Warahmatuallahi Wabarakatuh</h3>
                 <p className="info">
-                  Dengan memohon Rahmat dan <br />
-                  Ridho Allah Subhanahu Wa Ta'ala
-                  <br />
-                  Kami bermaksud menyelenggarakan <br />
-                  pernikahan putra-putri kami
+                  Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk
+                  rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran
+                  dan keberkahan.
                 </p>
               </div>
             </div>
@@ -31,6 +32,11 @@ function HelloSection({ isInvitation }) {
           <LazyLoad {...LAZY_LOAD}>
             <div className="row" style={{ animation: CUSTOM_ANIMATION }}>
               <div className="col-md-8 col-md-offset-2 text-center">
+                <img
+                  src={IMG_BRIDE}
+                  alt="bride"
+                  style={{ borderRadius: '50%', maxWidth: '140px', marginBottom: '16px' }}
+                />
                 <h3 className="">Isnaeni Rais Farahdila</h3>
                 <p className="parent">
                   Putri dari Bapak Slamet Isyono <br /> & Ibu Suratmi
@@ -45,6 +51,11 @@ function HelloSection({ isInvitation }) {
             {/* GROOM */}
             <div className="row" style={{ animation: CUSTOM_ANIMATION }}>
               <div className="col-md-8 col-md-offset-2 text-center">
+                <img
+                  src={IMG_GROOM}
+                  alt="groom"
+                  style={{ borderRadius: '50%', maxWidth: '140px', marginBottom: '16px' }}
+                />
                 <h3 className="">Agin Setiawan</h3>
                 <p className="parent">
                   Putra dari Bapak Agus Setiyono <br />& Ibu Indah Mulyanti
